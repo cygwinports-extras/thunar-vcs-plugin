@@ -1,0 +1,25 @@
+--- origsrc/thunar-vcs-plugin-0.1.4/thunar-vcs-plugin/Makefile.am	2011-02-27 11:48:04.000000000 -0600
++++ src/thunar-vcs-plugin-0.1.4/thunar-vcs-plugin/Makefile.am	2011-12-05 03:07:09.028372200 -0600
+@@ -72,13 +72,17 @@ thunar_vcs_plugin_la_LDFLAGS =						\
+ 	-avoid-version							\
+ 	-export-dynamic							\
+ 	-module								\
++	-no-undefined							\
+ 	$(PLATFORM_LDFLAGS)						\
+-	$(THUNARX_LDFLAGS)						\
+-	$(EXO_LDFLAGS)							\
+-	$(LIBXFCE4UTIL_LDFLAGS)
++	$(NULL)
++
++thunar_vcs_plugin_la_LIBADD =						\
++	$(THUNARX_LIBS)							\
++	$(EXO_LIBS)							\
++	$(LIBXFCE4UTIL_LIBS)
+ if HAVE_SUBVERSION
+-thunar_vcs_plugin_la_LDFLAGS +=						\
+-	$(APR_LDFLAGS)
++thunar_vcs_plugin_la_LIBADD +=						\
++	$(APR_LIBS)
+ endif
+ 
+ # vi:set ts=8 sw=8 noet ai nocindent:

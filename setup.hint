@@ -1,0 +1,5 @@
+category: Xfce
+requires: git libapr1 libcairo2 libglib2.0_0 libgtk2.0_0 libintl8 libpango1.0_0 libxfce4util4 subversion Thunar
+sdesc: "Thunar Subversion/Git plugin"
+ldesc: "The Thunar VCS Plugin adds Subversion and Git actions to the 
+context menu of Thunar. This gives a VCS integration to Thunar."
