@@ -1,0 +1,13 @@
+inherit xfce4
+
+NAME="thunar-vcs-plugin"
+VERSION=0.1.4
+RELEASE=2
+CATEGORY="Xfce"
+SUMMARY="Thunar Subversion/Git plugin"
+DESCRIPTION="The Thunar VCS Plugin adds Subversion and Git actions to the
+context menu of Thunar. This gives a VCS integration to Thunar."
+
+PATCH_URI="0.1.4-no-undefined.patch"
+
+REQUIRES="git"

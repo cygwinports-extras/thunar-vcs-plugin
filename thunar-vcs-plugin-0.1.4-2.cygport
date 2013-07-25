@@ -1,6 +1,0 @@
-inherit xfce4
-
-
-PATCH_URI="0.1.4-no-undefined.patch"
-
-CYGCONF_ARGS="--libexecdir=/usr/lib/${PN}"
